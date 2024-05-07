@@ -29,6 +29,8 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   border: 1px solid #272E64;
+  display: flex;
+  flex-direction: column;
 }
 
 .accordion button {
@@ -121,3 +123,13 @@ body {
 
 
 
+@media only screen and (width < 720px) {
+  .accordion .accordion-item {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .accordion button[aria-expanded='true'] + .accordion-content {
+    max-height: 10rem;
+    overflow: auto;
+  }
+}
