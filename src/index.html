@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link href="./static.css" rel="stylesheet">
 </head>
 <body
     class="bg-[#F9F7ED] text-[#272E64]"
@@ -24,8 +25,8 @@
                     <source src="https://www.youtube.com/watch?v=4jSf_xpDz_g" type="video/mp4">
                 </video>
             </div>
-            <div class="bg-[url('./public/bg-images.png')] flex justify-center items-center text-color-[#272E64]">
-                <div class="flex flex-col gap-10 bg-[#FBF9ED] justify-stretch items-stretch px-52 py-14 rounded-2xl font-bold text-2xl">
+            <div class="bg-[url('./public/bg-images.png')] flex justify-center items-center bg-contain text-color-[#272E64]">
+                <div class="flex flex-col gap-10 bg-[#FBF9ED] justify-center items-center px-52 py-14 rounded-2xl font-bold text-2xl">
                     <h1 class="text-center">⭐ 100% Gratuit  ⭐</h1>
                     <div
                         class="flex flex-row gap-5 text-base rounded-full bg-white overflow-hidden"
@@ -34,8 +35,8 @@
                         <button class="p-3 px-12">S'inscrire</button>
                     </div>
                     <div 
-                        id="connect"
-                        class="flex flex-col gap-2"
+                        id="login-form-1"
+                        class="flex flex-col gap-2 w-full"
                     >
                         <div class="flex flex-col gap-2 justify-stretch">
                             <input class="shadow appearance-none border border-[#C1D0E5] text-sm rounded w-full py-3 px-3 bg-transparent text-gray-500 focus:outline-none focus:shadow-outline" placeholder="Email">
@@ -54,6 +55,30 @@
                         </div>
                         <button class="ml-auto bg-[#87BD45] hover:bg-[#87BD45f0] min-w-[11rem] text-white font-light py-2 px-4 text-lg rounded-xl">Se connecter</button>
                     </div>
+                    <div 
+                        id="registration-form-1"
+                        class="hidden flex-col gap-5"
+                    >
+                        <div class="flex flex-col gap-2 justify-stretch">
+                            <select
+                                class="select w-full px-2 py-3 text-lg bg-transparent rounded-lg border border-[#C1D0E5]"
+                            >
+                                <option>Program 1</option>
+                                <option>Program 2</option>
+                                <option>Program 3</option>
+                                <option>Program 4</option>
+                            </select>
+                            <div
+                                class="flex gap-5"
+                            >
+                                <input class="shadow appearance-none border border-[#C1D0E5] text-sm rounded w-full py-3 px-3 bg-transparent text-gray-500 focus:outline-none focus:shadow-outline" placeholder="Prenom" type="text">
+                                <input class="shadow appearance-none border border-[#C1D0E5] text-sm rounded w-full py-3 px-3 bg-transparent text-gray-500 focus:outline-none focus:shadow-outline" placeholder="Nom" type="text">
+                            </div>
+                            <input class="shadow appearance-none border border-[#C1D0E5] text-sm rounded w-full py-3 px-3 bg-transparent text-gray-500 focus:outline-none focus:shadow-outline" placeholder="Votre adresse email" type="email">
+                            <input class="shadow appearance-none border border-[#C1D0E5] text-sm rounded w-full py-3 px-3 bg-transparent text-gray-500 focus:outline-none focus:shadow-outline" placeholder="Mot de passe" type="password">
+                        </div>
+                    <button class="ml-auto bg-[#87BD45] hover:bg-[#87BD45f0] min-w-[11rem] text-white font-light py-2 px-4 text-lg rounded-xl">Accès Gratuit</button>
+                </div>
                 </div>
             </div>
         </section>
@@ -92,41 +117,8 @@
                     <button class="p-3 px-12 min-w-[13rem] rounded-full bg-[#292C64] text-white">S'inscrire</button>
                 </div>
                 <div 
-                    id="connect"
-                    class="flex flex-col gap-5"
-                >
-                    <div class="flex flex-col gap-2 justify-stretch">
-                        <select
-                            class="select w-full px-2 py-3 text-lg bg-transparent rounded-lg border border-[#C1D0E5]"
-                        >
-                            <option>Program 1</option>
-                            <option>Program 1</option>
-                            <option>Program 1</option>
-                            <option>Program 1</option>
-                        </select>
-                        <div
-                            class="flex gap-5"
-                        >
-                            <input class="shadow appearance-none border border-[#C1D0E5] text-sm rounded w-full py-3 px-3 bg-transparent text-gray-500 focus:outline-none focus:shadow-outline" placeholder="Prenom" type="text">
-                            <input class="shadow appearance-none border border-[#C1D0E5] text-sm rounded w-full py-3 px-3 bg-transparent text-gray-500 focus:outline-none focus:shadow-outline" placeholder="Nom" type="text">
-                        </div>
-                        <input class="shadow appearance-none border border-[#C1D0E5] text-sm rounded w-full py-3 px-3 bg-transparent text-gray-500 focus:outline-none focus:shadow-outline" placeholder="Votre adresse email" type="email">
-                        <input class="shadow appearance-none border border-[#C1D0E5] text-sm rounded w-full py-3 px-3 bg-transparent text-gray-500 focus:outline-none focus:shadow-outline" placeholder="Mot de passe" type="password">
-                    </div>
-                    <button class="ml-auto bg-[#87BD45] hover:bg-[#87BD45f0] min-w-[11rem] text-white font-light py-2 px-4 text-lg rounded-xl">Accès Gratuit</button>
-                </div>
-            </div>
-            <div class="hidden flex-col gap-10 bg-[#FBF9ED] justify-stretch items-stretch px-16 py-14 border rounded-2xl border-[#00000032] font-bold text-2xl" id="login-form">
-                <h1 class="text-center">⭐ 100% Gratuit  ⭐</h1>
-                <div
-                    class="flex flex-row gap-5 text-base rounded-full bg-white overflow-hidden"
-                >
-                    <button class="bg-[#292C64] text-white p-3 px-12 min-w-[13rem] rounded-full">Se connecter</button>
-                    <button class="p-3 px-12 min-w-[13rem]">S'inscrire</button>
-                </div>
-                <div 
-                    id="connect"
-                    class="flex flex-col gap-2"
+                    id="login-form-2"
+                    class="hidden flex-col gap-2 w-full"
                 >
                     <div class="flex flex-col gap-2 justify-stretch">
                         <input class="shadow appearance-none border border-[#C1D0E5] text-sm rounded w-full py-3 px-3 bg-transparent text-gray-500 focus:outline-none focus:shadow-outline" placeholder="Email">
@@ -144,6 +136,30 @@
                         </label>
                     </div>
                     <button class="ml-auto bg-[#87BD45] hover:bg-[#87BD45f0] min-w-[11rem] text-white font-light py-2 px-4 text-lg rounded-xl">Se connecter</button>
+                </div>
+                <div 
+                    id="registration-form-2"
+                    class="flex flex-col gap-5"
+                >
+                    <div class="flex flex-col gap-2 justify-stretch">
+                        <select
+                            class="select w-full px-2 py-3 text-lg bg-transparent rounded-lg border border-[#C1D0E5]"
+                        >
+                            <option>Program 1</option>
+                            <option>Program 2</option>
+                            <option>Program 3</option>
+                            <option>Program 4</option>
+                        </select>
+                        <div
+                            class="flex gap-5"
+                        >
+                            <input class="shadow appearance-none border border-[#C1D0E5] text-sm rounded w-full py-3 px-3 bg-transparent text-gray-500 focus:outline-none focus:shadow-outline" placeholder="Prenom" type="text">
+                            <input class="shadow appearance-none border border-[#C1D0E5] text-sm rounded w-full py-3 px-3 bg-transparent text-gray-500 focus:outline-none focus:shadow-outline" placeholder="Nom" type="text">
+                        </div>
+                        <input class="shadow appearance-none border border-[#C1D0E5] text-sm rounded w-full py-3 px-3 bg-transparent text-gray-500 focus:outline-none focus:shadow-outline" placeholder="Votre adresse email" type="email">
+                        <input class="shadow appearance-none border border-[#C1D0E5] text-sm rounded w-full py-3 px-3 bg-transparent text-gray-500 focus:outline-none focus:shadow-outline" placeholder="Mot de passe" type="password">
+                    </div>
+                    <button class="ml-auto bg-[#87BD45] hover:bg-[#87BD45f0] min-w-[11rem] text-white font-light py-2 px-4 text-lg rounded-xl">Accès Gratuit</button>
                 </div>
             </div>
             <div
@@ -176,18 +192,70 @@
                 <h1 class="font-bold text-center text-5xl">Vous avez l'air intéréssée 😉</h1>
                 <h1 class="font-bold text-center text-5xl">voici un FAQ pour valider votre choix</h1>
             </div>
-            <div>
-                <div>Box</div>
-                <div>Box</div>
-                <div>Box</div>
-                <div>Box</div>
-                <div>Box</div>
-                <div>Box</div>
-                <div>Box</div>
-                <div>Box</div>
-                <div>Box</div>
-                <div>Box</div>
-                <div>Box</div>
+            <div class="faq-container accordion flex flex-col gap-4 max-w-[90vw] md:max-w-[50vw] lg:max-w-[1024px]">
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title">À quelle fréquence doit-on remplacer son chauffe-eau?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Aux 10 à 12 ans.   Avec les années, la rouille causée par l’eau endommage le contenant de métal. Soyez aux aguets : l’apparition des premiers signes de rouille, d'humidité au toucher du réservoir et le changement de coloration de l'eau chaude (rougeâtre) sont autant de signes avant-coureurs que la durée de vie de votre chauffe-eau arrive à échéance.
+                        </p>
+                </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false">
+                        <span class="accordion-title">Why is the sky blue?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                            Ut tortor pretium viverra suspendisse potenti.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-3" aria-expanded="false">
+                        <span class="accordion-title">Will we ever discover aliens?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                            Ut tortor pretium viverra suspendisse potenti.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-4" aria-expanded="false">
+                        <span class="accordion-title">How much does the Earth weigh?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                            Ut tortor pretium viverra suspendisse potenti.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false">
+                        <span class="accordion-title">How do airplanes stay up?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                            Ut tortor pretium viverra suspendisse potenti.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="mt-24 p-16 bg-gradient-to-b from-[#F9F7ED] to-[#F0E6C6] flex flex-col justify-center items-center gap-12">
@@ -204,5 +272,6 @@
             </div>
         </section>
     </main>
+    <script src="./scripts/faq.js"></script>
 </body>
 </html>
